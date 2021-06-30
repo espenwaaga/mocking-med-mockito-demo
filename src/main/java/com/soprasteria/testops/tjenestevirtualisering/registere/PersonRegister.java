@@ -24,4 +24,8 @@ public final class PersonRegister {
     public Map<Fødselsnummer, Person> getPersoner() {
         return personer;
     }
+
+    public Person hentPerson(Fødselsnummer fnr) {
+        return personer.get(fnr);
+    }
 }
